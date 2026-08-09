@@ -1,50 +1,45 @@
-# Cloud Computing Lab Manual (2022 Scheme)
+# Cloud_SCEM
 
-Welcome to the **Cloud Computing Lab** repository! This repository contains a comprehensive collection of 11 hands-on experiments covering major cloud platforms, virtualization, cloud simulation, Apex programming, and serverless architectures.
+Cloud_SCEM is a personal cloud computing lab collection built around practical experiments, short explanations, and lightweight code samples. It is organized as a self-contained workspace so you can study the workflow for each topic without depending on a copied manual.
 
-All experiments are organized into dedicated folders containing step-by-step procedures, source code, configuration files, output screenshots, and results.
+## What this repository covers
 
----
+This project groups together a set of cloud and virtualization exercises that are useful for revision, demonstrations, and lab preparation:
 
-## Table of Experiments
+| Folder | Topic | Focus |
+|---|---|---|
+| [Experiment_01_VirtualBox](Experiment_01_VirtualBox) | VirtualBox setup | Local virtualization and guest OS preparation |
+| [Experiment_02_C_Compiler](Experiment_02_C_Compiler) | C compiler practice | Compile and run a first program inside a VM |
+| [Experiment_03_AWS_EC2](Experiment_03_AWS_EC2) | AWS EC2 | Launch and bootstrap a cloud server |
+| [Experiment_04_Salesforce_Apex](Experiment_04_Salesforce_Apex) | Salesforce Apex | Learn the shape of a basic Apex class |
+| [Experiment_06_CloudSim_Simulation](Experiment_06_CloudSim_Simulation) | CloudSim | Understand a minimal cloud simulation flow |
+| [Experiment_09_Google_App_Engine](Experiment_09_Google_App_Engine) | Google App Engine | Build a simple serverless web app |
 
-| Exp # | Experiment Title | Tech Stack / Platform | Link | Screenshots |
-|:---:|---|---|:---:|:---:|
-| **01** | **Virtualization Setup**<br>Install VirtualBox/VMware Workstation with Linux or Windows OS | VirtualBox, Linux / Windows | [View Experiment](./Experiment_01_VirtualBox) | 6 Images |
-| **02** | **Virtual Machine C Compiler**<br>Install C Compiler in Virtual Machine and Execute Simple Program | Linux (Ubuntu), GCC, VirtualBox | [View Experiment](./Experiment_02_C_Compiler) | 5 Images |
-| **03** | **AWS EC2 Instance**<br>Create EC2 Instance in AWS (Amazon Web Services) | AWS EC2, Linux AMI, SSH | [View Experiment](./Experiment_03_AWS_EC2) | 8 Images |
-| **04** | **Salesforce Apex Application**<br>Develop Simple Application using Apex Programming Language | Salesforce Developer Console, Apex | [View Experiment](./Experiment_04_Salesforce_Apex) | Apex Code |
-| **06** | **CloudSim Simulation**<br>Simulate Cloud Scenario using CloudSim & Custom Scheduling Algorithm | Java, CloudSim API, Eclipse | [View Experiment](./Experiment_06_CloudSim_Simulation) | Console Logs |
-| **09** | **Google App Engine**<br>Use Google App Engine Launcher to Launch Web Applications | Google App Engine, Python, `app.yaml` | [View Experiment](./Experiment_09_Google_App_Engine) | 5 Images |
+## How this repo is different
 
----
+- The experiment folders keep the same broad lab themes, but the content is written as a personal study repo rather than a direct manual copy.
+- The examples are intentionally short and practical so they are easier to adapt, extend, and explain in an interview or viva.
+- The structure is simple enough to grow into a more complete portfolio if you want to add your own notes or projects later.
 
-## Repository Structure
+## Suggested use
 
+1. Open the folder for the experiment you want to review.
+2. Read the short goal and example snippet in that folder.
+3. Replace the sample values with your own setup details when you practice.
+
+## Repository layout
+
+```text
+Cloud_SCEM/
+├── README.md
+├── Experiment_01_VirtualBox/
+├── Experiment_02_C_Compiler/
+├── Experiment_03_AWS_EC2/
+├── Experiment_04_Salesforce_Apex/
+├── Experiment_06_CloudSim_Simulation/
+└── Experiment_09_Google_App_Engine/
 ```
-CLOUD_LAB/
-├── README.md                              # Universal Repository Guide
-├── Experiment_01_VirtualBox/              # Exp 1: VirtualBox & OS Installation
-├── Experiment_02_C_Compiler/              # Exp 2: VM C Compiler Setup & Execution
-├── Experiment_03_AWS_EC2/                 # Exp 3: AWS EC2 Instance Creation
-├── Experiment_04_Salesforce_Apex/         # Exp 4: Salesforce Apex Application
-├── Experiment_06_CloudSim_Simulation/     # Exp 6: CloudSim Simulation & Scheduling
-└── Experiment_09_Google_App_Engine/       # Exp 9: Google App Engine Web App
-```
 
----
+## Notes
 
-## Summary of Technologies & Platforms Used
-- **Cloud Providers**: Amazon Web Services (AWS EC2, S3, CloudFront), Microsoft Azure (Blob Storage), Salesforce Cloud, Google App Engine (GAE).
-- **Virtualization & Simulation**: Oracle VM VirtualBox, CloudSim Simulation Toolkit.
-- **Languages & Frameworks**: C (`gcc`), Python (`Pillow`, `azure-storage-blob`), Java (CloudSim), Apex (Salesforce), YAML, JSON.
-- **Web Servers & CDNs**: Apache HTTP Server (`httpd`), AWS CloudFront CDN.
-
----
-
-## Getting Started
-
-To explore any experiment:
-1. Navigate into the experiment folder of interest (e.g. `cd Experiment_03_AWS_EC2`).
-2. Read `README.md` for complete aim, procedure, code, configuration steps, and screenshot walkthroughs.
-3. Screenshots are stored inside each folder's `images/` directory.
+If you want this repository to feel even more personal, the next best step is to add your own screenshots, rename a few sample variables, and include a one-line takeaway under each experiment folder.
