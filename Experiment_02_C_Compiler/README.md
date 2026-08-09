@@ -1,48 +1,43 @@
 # Experiment 2: Install C Compiler in Virtual Machine and Execute Simple Program
 
 ## Aim
-To Install a C compiler in the virtual machine created using virtual box and executes Simple Program.
-
+To install a C compiler in the virtual machine and execute a simple program successfully.
 
 ## Procedure
 
-- **2. Install a C compiler in the virtual machine created using virtual box and executes Simple program.**
+### 1. Prepare the virtual machine
+- Start the Linux virtual machine in VirtualBox.
+- Open the terminal and update the package list.
+- Install the GNU C Compiler if it is not already present.
 
-### Steps to import Ubuntu file
-- Open Virtual box
-- File import Appliance
-- Browse ubuntu_gt6.ova file
-- Then go to setting, select USB and choose USB 1.1
-- Then Start the ubuntu_gt6
-
-![Step Screenshot](images/step_image_1.png)
-
-
-### Steps to run C program:
-- **1. Open the terminal**
-- **2. Type cd /opt/axis2/axis2-1.7.3/bin then press enter**
-- **3. gedit hello.c**
-- **4. gcc hello.c**
-- **5. ./a.out**
 ```bash
-Type gedit first.c
+sudo apt update
+sudo apt install build-essential -y
 ```
 
-![Step Screenshot](images/step_image_2.png)
+### 2. Create the C source file
+- Create a file named hello_lab.c using a text editor.
 
-- Type the C program
+```c
+#include <stdio.h>
 
-![Step Screenshot](images/step_image_3.png)
+int main(void) {
+    printf("Cloud lab C program executed successfully\n");
+    return 0;
+}
+```
 
-Running the C program
+### 3. Compile and run the program
+- Compile the code using gcc.
+- Execute the generated binary.
 
-![Step Screenshot](images/step_image_4.png)
+```bash
+gcc hello_lab.c -o hello_lab
+./hello_lab
+```
 
-Display the output:
-
-![Step Screenshot](images/step_image_5.png)
-
+### 4. Observe the output
+The program should print the success message on the terminal.
 
 ## Results
-
-The experiment for 'Install C Compiler in Virtual Machine and Execute Simple Program' was successfully implemented, configured, and verified.
+The C compiler was installed successfully and the sample program executed correctly in the virtual machine.
