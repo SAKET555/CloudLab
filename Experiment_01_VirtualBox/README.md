@@ -1,32 +1,37 @@
 # Experiment 1: Install VirtualBox/VMware Workstation with Linux or Windows OS
 
 ## Aim
-To install VirtualBox or VMware Workstation on a host machine and create a virtual environment for running an operating system.
+To Install Virtualbox / VMware Workstation with different flavours of linux or windows OS.
+
 
 ## Procedure
 
-### 1. Install the virtualization software
-- Download the VirtualBox installer from the official website.
-- Run the setup file and follow the installation wizard.
-- Accept the license agreement and click Next at each step.
-- Click Install and wait for the installation to complete.
+### 1. Install VirtualBox/VMware Workstation with different flavors of linux or windows OS on top of windows7 or 8.
+- Download the Virtual box exe and click the exe file…and select next button.
 
 ![Step Screenshot](images/step_image_1.png)
 
-### 2. Create a new virtual machine
-- Open VirtualBox and click New.
-- Enter a name for the virtual machine and select the operating system type.
-- Allocate RAM and create a virtual hard disk.
-- Start the VM and select an installation ISO file.
+- Click the next button.
 
 ![Step Screenshot](images/step_image_2.png)
 
-### 3. Install the guest OS
-- Follow the OS installation wizard inside the virtual machine.
-- Complete the setup and reboot the VM.
-- Verify that the guest OS starts successfully.
+- Click the next button.
 
 ![Step Screenshot](images/step_image_3.png)
 
+- Click the YES button.
+
+![Step Screenshot](images/step_image_4.png)
+
+- Click the install button…
+
+![Step Screenshot](images/step_image_5.png)
+
+- Then installation was completed. The show virtual box icon on desktop screen….
+
+![Step Screenshot](images/step_image_6.png)
+
+
 ## Results
-The VirtualBox/VMware environment was installed successfully and the guest operating system was created and verified for further lab activities.
+
+The experiment for 'Install VirtualBox/VMware Workstation with Linux or Windows OS' was successfully implemented, configured, and verified.

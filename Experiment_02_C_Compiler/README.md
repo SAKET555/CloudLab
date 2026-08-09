@@ -1,43 +1,48 @@
 # Experiment 2: Install C Compiler in Virtual Machine and Execute Simple Program
 
 ## Aim
-To install a C compiler in the virtual machine and execute a simple program successfully.
+To Install a C compiler in the virtual machine created using virtual box and executes Simple Program.
+
 
 ## Procedure
 
-### 1. Prepare the virtual machine
-- Start the Linux virtual machine in VirtualBox.
-- Open the terminal and update the package list.
-- Install the GNU C Compiler if it is not already present.
+- **2. Install a C compiler in the virtual machine created using virtual box and executes Simple program.**
 
+### Steps to import Ubuntu file
+- Open Virtual box
+- File import Appliance
+- Browse ubuntu_gt6.ova file
+- Then go to setting, select USB and choose USB 1.1
+- Then Start the ubuntu_gt6
+
+![Step Screenshot](images/step_image_1.png)
+
+
+### Steps to run C program:
+- **1. Open the terminal**
+- **2. Type cd /opt/axis2/axis2-1.7.3/bin then press enter**
+- **3. gedit hello.c**
+- **4. gcc hello.c**
+- **5. ./a.out**
 ```bash
-sudo apt update
-sudo apt install build-essential -y
+Type gedit first.c
 ```
 
-### 2. Create the C source file
-- Create a file named hello_lab.c using a text editor.
+![Step Screenshot](images/step_image_2.png)
 
-```c
-#include <stdio.h>
+- Type the C program
 
-int main(void) {
-    printf("Cloud lab C program executed successfully\n");
-    return 0;
-}
-```
+![Step Screenshot](images/step_image_3.png)
 
-### 3. Compile and run the program
-- Compile the code using gcc.
-- Execute the generated binary.
+Running the C program
 
-```bash
-gcc hello_lab.c -o hello_lab
-./hello_lab
-```
+![Step Screenshot](images/step_image_4.png)
 
-### 4. Observe the output
-The program should print the success message on the terminal.
+Display the output:
+
+![Step Screenshot](images/step_image_5.png)
+
 
 ## Results
-The C compiler was installed successfully and the sample program executed correctly in the virtual machine.
+
+The experiment for 'Install C Compiler in Virtual Machine and Execute Simple Program' was successfully implemented, configured, and verified.
