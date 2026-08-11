@@ -21,6 +21,10 @@ This project groups together a set of cloud and virtualization exercises that ar
 - The examples are intentionally short and practical so they are easier to adapt, extend, and explain in an interview or viva.
 - The structure is simple enough to grow into a more complete portfolio if you want to add your own notes or projects later.
 
+## Inspiration & Lab Manual
+
+This repository's structure and experiments are inspired by the course curriculum from the Department of Computer Science & Engineering, Sahyadri College of Engineering & Management (SCEM), Mangaluru. The original lab manual for this course is included in this repository as [CS722I1C_Cloud_Computing_and_Security.pdf](CS722I1C_Cloud_Computing_and_Security.pdf).
+
 ## Suggested use
 
 1. Open the folder for the experiment you want to review.
