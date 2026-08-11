@@ -1,14 +1,15 @@
 # Experiment 9: Use Google App Engine Launcher to Launch Web Applications
 
 ## Aim
-To use Google App Engine Launcher to launch web applications.
+To use the Google App Engine Launcher to run and deploy a local web application.
 
 
 ## Procedure
 
-9. Use Google App Engine Launcher to launch web applications.
-C:\Documents and Settings\csev\Desktop\apps And then make a sub--‐folder in within apps called “ae--01--trivial” – the path to this folder would be: C:\ Documents and Settings \csev\Desktop\apps\ae--01--trivial Using a text editor such as JEdit (www.jedit.org)
-### Application Configuration (`app.yaml`)
+### Step 1: Create the Project Files
+Create a new project directory on your desktop or workspace named `ae-01-trivial`. Inside this folder, create the following two files:
+
+#### Application Configuration (`app.yaml`)
 ```yaml
 application: ae-01-trivial
 version: 1
@@ -20,58 +21,53 @@ handlers:
     script: index.py
 ```
 
-### Python Script (`index.py`)
+#### Python Script (`index.py`)
 ```python
 print 'Content-Type: text/plain'
 print ''
 print 'Hello there Chuck'
 ```
-Then create a file in the ae--01--trivial folder called index.py with three lines in it: print 'Content-Type: text/plain' print ' ' print 'Hello there Chuck'
-Then start the GoogleAppEngineLauncher program that can be found under Applications. Use the File --> Add Existing Application command and navigate into the apps directory and select the ae--01--trivial folder.
-Once you have added the application, select it so that you can control the application using the launcher.
+
+---
+
+### Step 2: Add the Application to the GAE Launcher
+1. Open the **Google App Engine Launcher** application.
+2. Select **File** > **Add Existing Application** from the top menu.
+3. Browse to and select the `ae-01-trivial` folder, then click **Add**.
+4. Select the application in the launcher list to enable controls.
 
 ![Step Screenshot](images/step_image_1.png)
 
-Once you have selected your application and press Run. After a few moments your application will start and the launcher will show a little green icon next to your application.
-Then press Browse to open a browser pointing at your application which is running at http://localhost:8080/
-Paste http://localhost:8080 into your browser and you should see your application as follows:
+---
+
+### Step 3: Run and Browse the Application
+1. Click the **Run** button at the top of the GAE Launcher interface to start the local server. A green status indicator will appear next to the project name.
+2. Click the **Browse** button or open your web browser and navigate to `http://localhost:8080/`. You should see the text output displayed.
 
 ![Step Screenshot](images/step_image_2.png)
 
-Edit the index.py to change the name “Chuck” to your own name and press Refresh in the browser to verify your updates.
-Watching the Log You can watch the internal log of the actions that the web server is performing when you are interacting with your application in the browser.
-Select your application in the Launcher and press the Logs button to bring up a log window:
-Each time you press Refresh in your browser – you can see it retrieving the output with a GET request.
+3. Open `index.py` in your text editor, change the name `'Chuck'` to your own name, save the file, and refresh your browser to verify the updates.
+
+---
+
+### Step 4: Monitor Application Logs
+1. Click the **Logs** button in the launcher to open the real-time server log window.
+2. Every time you reload the browser page, you will see server GET requests being processed:
 
 ![Step Screenshot](images/step_image_3.png)
 
-Dealing with Errors
-### Application Configuration (`app.yaml`)
-```yaml
-application: ae-01-trivial
-version: 1
-runtime: python
-api_version: 1
+---
 
-handlers:
-  - url: /.*
-    script: index.py
-```
-
-### Python Script (`index.py`)
-```python
-print 'Content-Type: text/plain'
-print ''
-print 'Hello there Chuck'
-```
+### Step 5: Troubleshooting and Dealing with Errors
+If there is a syntax or handler error in your script (e.g., misconfigured `app.yaml` or `index.py`), the browser will output an error details page:
 
 ![Step Screenshot](images/step_image_4.png)
 
-To get more detail on what is going wrong, take a look at the log for the application:
+To diagnose the problem, open the GAE Launcher log console to view the traceback and locate the issue:
 
 ![Step Screenshot](images/step_image_5.png)
 
 
 ## Results
 
-Thus the GAE web applications were created.
+The Python web application was successfully launched, modified, and monitored using the Google App Engine Launcher.
