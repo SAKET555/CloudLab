@@ -12,6 +12,7 @@ This project groups together a set of cloud and virtualization exercises that ar
 | [Experiment_02_C_Compiler](Experiment_02_C_Compiler) | C compiler practice | Compile and run a first program inside a VM |
 | [Experiment_03_AWS_EC2](Experiment_03_AWS_EC2) | AWS EC2 | Launch and bootstrap a cloud server |
 | [Experiment_04_Salesforce_Apex](Experiment_04_Salesforce_Apex) | Salesforce Apex | Learn the shape of a basic Apex class |
+| [Experiment_05_Salesforce_Email](Experiment_05_Salesforce_Email) | Salesforce Email | Implement an email transmission service using Apex |
 | [Experiment_06_CloudSim_Simulation](Experiment_06_CloudSim_Simulation) | CloudSim | Understand a minimal cloud simulation flow |
 | [Experiment_09_Google_App_Engine](Experiment_09_Google_App_Engine) | Google App Engine | Build a simple serverless web app |
 
@@ -40,6 +41,7 @@ Cloud_SCEM/
 ├── Experiment_02_C_Compiler/
 ├── Experiment_03_AWS_EC2/
 ├── Experiment_04_Salesforce_Apex/
+├── Experiment_05_Salesforce_Email/
 ├── Experiment_06_CloudSim_Simulation/
 └── Experiment_09_Google_App_Engine/
 ```
